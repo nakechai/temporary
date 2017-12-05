@@ -1,0 +1,19 @@
+
+#id-button-change {
+    width: 100px;
+    height: 100px;
+}
+
+#id-button-picture {
+    width: 100px;
+    height: 100px;
+}
+
+#id-button-upload {
+    width: 100px;
+    height: 100px;
+}
+
+#canvas {
+    display: none;
+}

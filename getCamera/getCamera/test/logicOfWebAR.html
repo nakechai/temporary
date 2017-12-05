@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /**
+     * 1、识别卡 marker 的制作可以利用程序写出来。
+     * 利用 svg 以及其子标签 rect；
+     * 其中 rect 的 x y 指的是左上角顶点位置，其原点在屏幕左上角，宽高为小方块的个数；
+     * 下面的属性会覆盖上面的属性（比如填充的颜色）；
+     *
+     *
+     * 2、摄像头扫描识别卡的逻辑
+     * 一）、初始化 JsArucoMarker （初始化识别卡）
+     * 在 JsArucoMarker 类中，有一些属性以及两个方法 detectMarkers markerToObject3D
+         * I)detectMarkers 方法传入的参数是 video DOM 对象，
+         * 在函数内部将看到的图片 marker 画到 canvas 画布上，
+         * 再借助 context 的 getImageData 方法得到摄像头看到的图片的信息（此信息存放在 context.getImageData 对象的 data 属性中），
+         * 接着调用 aruco.js 库对拍到的图片进行识别（这里面涉及到算法？ 如何识别？意思是先用代码写一个好的 marker，然后这个事先写好的 marker 与拍摄到的图片进行对比？）
+         * 最后返回 detected markers （此处自我理解应该是已经检测到的与代码写的 marker 一样的识别卡）的数组，这个数组包含检测到的 marker 的 id 和 corners
+         *
+         * II）、markerToObject3D
+         *这里，这个函数的第二个参数是 object3D，object3D到底是什么？
+     *
+     *
+     *
+     * 二）、调取 web 摄像头，返回 video 元素，并将 video 元素添加到 body 中
+     * webcamGrabbing 函数中，先创建 video 元素，然后用 navigator.mediaDevices.getUserMedia 函数，将看到的东西作为 video 的 src 属性
+     *
+     * 三） 渲染
+     * render 因为在实例化的时候，没有传入属性 canvas，所以下面添加到 body 中时，renderer 创建了一个 canvas
+     * 初始化 scene
+     * 初始化 camera（同时设置 camera 的 z 位置）
+     * 初始化 markerObject3D，同时将 markerObject3D 添加到 scene 中
+     *初始化 灯光，并将其添加到 scene 中
+     *
+     * 引用 MMDLoader.js 库，使用此库中的 MMDLoader 和 MMDHelper 方法来下载模型文件 (modelFile)、姿态动画文件（vmdFiles）
+     * 上述两个文件（modelFile 要作为 url 字符串，且要注意此 url 要是 https 协议，且要与发布的 html 页面在同一个域中；
+     * vmdFiles 要作为数组，其每一项是 url 字符串，且要注意此 url 要是 https 协议，且要与发布的 html 页面在同一个域中；），要作为 loader 对象的 load 方法的参数传入
+     * 此处有一个问题就是 load 的第三个参数是一个函数，此处是 load 调用，那这个 function 的参数 object 是什么，如何解释？
+     * 在 load 方法中将 mesh 添加到已经实例化的 markerObject3D 中
+     *
+     * requestAnimationFrame 循环调用这个函数，来处理 onRenderFcts 数组中的每一个函数
+     * onRenderFcts = [f1,f2,f3]
+     *
+     var f1 = function(now, delta){
+            helper.animate(delta/1000);
+        }
+
+     var f2 = () => {
+        renderer.render( scene, camera );
+    }
+
+     var f3 = reMark
+
+     *
+     *
+     *对于探测到的 markers 数组，将其遍历，然后每一个数组元素调用 markerToObject3D 函数，让 object3d.visible = true;
+     */
+</script>
+</body>
+</html>

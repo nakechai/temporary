@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://developer.mozilla.org/en-US/docs/Glossary/Callback_function -->
+<html lang="en-US" dir="ltr" class="translated-ltr" data-ffo-opensans="true" data-ffo-zillaslab="true"><head prefix="og: http://ogp.me/ns#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="./01回调函数 - 词汇表_ MDN_files/analytics.js.下载"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  <title>回调函数 - 词汇表|  MDN</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="copyright" href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function#copyright">
+  
+
+  
+    
+    
+
+    
+          <link href="./01回调函数 - 词汇表_ MDN_files/mdn.8b287b53788b.css" rel="stylesheet" type="text/css">
+      
+
+    
+  
+
+    
+        <link href="./01回调函数 - 词汇表_ MDN_files/wiki.ba8875f804c7.css" rel="stylesheet" type="text/css">
+    
+
+
+    
+
+  <link href="./01回调函数 - 词汇表_ MDN_files/locale-en-US.7e45c23d7d30.css" rel="stylesheet" type="text/css">
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.mdn.mozilla.net/static/img/opengraph-logo.72382e605ce3.png">
+    <meta property="og:site_name" content="Mozilla Developer Network">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://cdn.mdn.mozilla.net/static/img/opengraph-logo.72382e605ce3.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla开发者网络">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cdn.mdn.mozilla.net/static/img/favicon144.e7e21ca263ca.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cdn.mdn.mozilla.net/static/img/favicon114.d526f38b09c5.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cdn.mdn.mozilla.net/static/img/favicon72.cc65d1d762a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="https://cdn.mdn.mozilla.net/static/img/favicon57.de33179910ae.png">
+  <!-- basic favicon -->
+  <link rel="shortcut icon" href="https://cdn.mdn.mozilla.net/static/img/favicon32.7f3da72dcea1.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://cdn.mdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  <script type="text/javascript" src="./01回调函数 - 词汇表_ MDN_files/font-check.713e9d01025c.js.下载" charset="utf-8"></script>
+
+  
+  <link rel="dns-prefetch" href="https://interactive-examples.mdn.mozilla.net/" pr="0.75">
+  <link rel="preconnect" href="https://interactive-examples.mdn.mozilla.net/" pr="0.75">
+
+  <link rel="preload" href="https://interactive-examples.mdn.mozilla.net/js/codemirror-5-31-0.js" as="script">
+  <link rel="preload" href="https://interactive-examples.mdn.mozilla.net/js/editor-js.js" as="script">
+
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function$json">
+  <link rel="canonical" href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function">
+
+  
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Glossaire/Fonction_de_rappel" title="功能de rappel">
+    
+      <link rel="alternate" hreflang="pt-BR" href="https://developer.mozilla.org/pt-BR/docs/Glossario/Callback_function" title="Função回拨">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="Callback function">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function">
+  <meta name="twitter:title" content="Callback function">
+  
+  <meta property="og:description" content="A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.">
+  <meta name="description" content="A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.">
+  <meta name="twitter:description" content="A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.">
+  
+
+
+  
+
+<script type="text/javascript">
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-36116321-5', 'mozilla.org');
+    ga('set', 'anonymizeIp', true);
+
+    
+
+    // dimension9 == "Section editing"
+    
+        ga('set', 'dimension9', 'Enabled');
+    
+        // dimension12 == 'Page Revision'
+        ga('set', 'dimension12', '1256967');
+        // dimension17 == 'English Slug'
+        ga('set', 'dimension17', 'Glossary/Callback_function');
+
+    (function() {
+        // http://cfsimplicity.com/61/removing-analytics-clutter-from-campaign-urls
+        var win = window;
+        var removeUtms = function(){
+            var location = win.location;
+            if (location.href.indexOf('utm') != -1 && win.history.replaceState) {
+                win.history.replaceState({}, '', location.pathname);
+            }
+        };
+
+        ga('send', 'pageview', {'hitCallback': removeUtms});
+    })();
+</script>
+
+<script async="" data-manual="true" src="./01回调函数 - 词汇表_ MDN_files/syntax-prism.05dc5663d445.js.下载"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="./01回调函数 - 词汇表_ MDN_files/translateelement.css"></head>
+<body data-slug="Glossary/Callback_function" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    // make sure global mdn object exists
+    var mdn = window.mdn || {};
+
+    (function(win) {
+        'use strict';
+
+        (function(){
+  var FLAGS = {
+    'compat_data': false,'kumaediting': false,'line_length': true,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': true,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true,'foundation_callout': false,'helpful-survey-2': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = '/static/js/libs/ckeditor/build/ckeditor/';
+
+        // Site configuration
+        win.mdn.ckeditor = {};
+        win.mdn.features = {};
+        win.mdn.staticPath = 'https://cdn.mdn.mozilla.net/static/';
+        win.mdn.wiki = {
+            autosuggestTitleUrl: '/en-US/docs/get-documents'
+        };
+        win.mdn.assets = {
+            css: {
+                'editor-content': ['https://cdn.mdn.mozilla.net/static/build/styles/editor-content.703a6a9f6455.css','https://cdn.mdn.mozilla.net/static/build/styles/editor-locale-en-US.7e45c23d7d30.css',
+                ],
+
+                'wiki-compat-tables': ['https://cdn.mdn.mozilla.net/static/build/styles/wiki-compat-tables.21c273393a76.css',]
+            },
+            js: {
+                'syntax-prism': ['https://cdn.mdn.mozilla.net/static/build/js/syntax-prism.05dc5663d445.js',],
+                'wiki-compat-tables': ['https://cdn.mdn.mozilla.net/static/build/js/wiki-compat-tables.5ed42ff288ec.js',]
+            }
+        };
+
+        win.mdn.notifications = [];
+
+        
+
+        // interactive editor config
+        win.mdn.interactiveEditor = {
+            siteUrl: "https://developer.mozilla.org",
+            editorUrl: "https://interactive-examples.mdn.mozilla.net"
+        };
+
+    })(this);
+</script>
+    
+  <ul id="nav-access">
+    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function#document-main" id="skip-main"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">跳到主要内容</font></font></a></li>
+    <li><a id="skip-language" href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function#language"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选择语言</font></font></a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function#q" id="skip-search"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">跳到搜索</font></font></a></li>
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+    <a href="https://developer.mozilla.org/en-US/" class="logo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MDN网页文件</font></font></a>
+
+    <div id="nav-sec">
+      <ul>
+      <li class="nav-login"><div class="login">
+    
+        
+        <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FGlossary%2FCallback_function" class="login-link js-login-link" data-service="GitHub"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            签到
+            </font></font><i class="icon-github" aria-hidden="true"></i>
+        </a>
+    
+</div></li>
+      </ul>
+    </div>
+
+    <nav id="main-nav" class="nav-main" role="navigation"><ul><li class="nav-main-item"><a href="https://developer.mozilla.org/en-US/docs/Web"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">技术</font></font><i aria-hidden="true" class="icon-caret-down"></i></a>
+      <div class="submenu js-submenu" id="nav-tech-submenu" aria-hidden="true" style="z-index: 99998; display: none;">
+        <div class="submenu-column">
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTML</font></font></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CSS</font></font></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JavaScript的</font></font></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图像</font></font></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTTP</font></font></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">API / DOM</font></font></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">浏览器扩展</font></font></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MATHML</font></font></a></li>
+          </ul>
+        </div><button type="button" class="submenu-close transparent"><span class="offscreen"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关闭子菜单</font></font></span><i aria-hidden="true" class="icon-times"></i></button></div></li><li class="nav-main-item"><a href="https://developer.mozilla.org/en-US/docs/Learn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参考和指南</font></font><i aria-hidden="true" class="icon-caret-down"></i></a>
+        <div class="submenu js-submenu" id="nav-learn-submenu">
+        <div class="submenu-column">
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学习网页开发</font></font></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教程</font></font></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参考</font></font></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发者指南</font></font></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无障碍</font></font></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Games"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">游戏开发</font></font></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...更多文档</font></font></a></li>
+          </ul>
+        </div>
+      </div>
+      </li><li class="nav-main-item"><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">反馈</font></font><i aria-hidden="true" class="icon-caret-down"></i></a>
+        <div class="submenu js-submenu" id="nav-contact-submenu" aria-hidden="true" style="z-index: 99998; display: none;">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://support.mozilla.org/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取Firefox帮助</font></font><i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a href="https://stackoverflow.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获得Web开发帮助</font></font><i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Community"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入MDN社区</font></font></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Glossary/Callback_function"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">报告内容问题</font></font><i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a target="_blank" href="https://bugzilla.mozilla.org/form.mdn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">报告一个错误</font></font><i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        <button type="button" class="submenu-close transparent"><span class="offscreen">Close submenu</span><i aria-hidden="true" class="icon-times"></i></button></div>
+      </li>
+      <li class="nav-main-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>
+          <button type="submit" class="offscreen"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></button>
+        </div>
+      </form></li>
+    </ul></nav>
+  </div></header> 
+
+  <!-- Content will go here -->
+  <main id="content">
+      
+  <!-- heading -->
+  <div id="wiki-document-head" class="document-head">
+    <div class="center">
+      <!-- action buttons -->
+      <div class="document-actions">
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons">
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语言</font></font></span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu" aria-hidden="true" style="z-index: 99998; display: none;">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Glossaire/Fonction_de_rappel" title="法国"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Français（fr）</font></font></a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/pt-BR/docs/Glossario/Callback_function" title="葡萄牙语（巴西）"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Português（do Brasil）（pt-BR）</font></font></a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function$locales" rel="nofollow, noindex" id="translations-add"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加翻译</font></font></a></li>
+              
+            </ul>
+          </div>
+        <button type="button" class="submenu-close transparent"><span class="offscreen"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关闭子菜单</font></font></span><i aria-hidden="true" class="icon-times"></i></button></div>
+      </li>
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function$edit" class="button neutral" id="edit-button" rel="nofollow, noindex"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font><i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li class="page-buttons-advanced"><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高级</font></font></span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高级</font></font></div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function$history" rel="nofollow, noindex"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">历史</font></font></a></li>
+                
+                
+                
+
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function#" onclick="return window.print();"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打印这篇文章</font></font></a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+      </div>
+
+      <div class="document-title">
+        
+
+        <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回调函数</font></font></h1>
+      </div>
+    </div>
+  </div>
+  
+  <div id="toc" class="toc hidden">
+    <div class="center">
+      <div class="toc-head"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">跳到：</font></font></div>
+        <ol class="toc-links">
+          <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function#Learn_more" rel="internal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学到更多</font></font></a>
+        </li></ol>
+    </div>
+  </div>
+  
+
+      <div class="center clear">
+      
+
+    <div class="wiki-main-content" id="document-main" role="main"><div class="center">
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-closed wiki-right-none wiki-left-closed wiki-left-none">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            
+
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-all wiki-column text-content">
+
+              
+
+              
+              
+
+              
+
+              
+                
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回调函数是一个作为参数传递给另一个函数的函数，然后在外部函数内调用该函数来完成某种例程或动作。</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这里是一个简单的例子：</font></font></p>
+
+<pre class="brush: js line-numbers  language-js"><code class=" language-js"><span class="token keyword">function</span> <span class="token function">greeting</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Hello '</span> <span class="token operator">+</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><font></font>
+<font></font>
+<span class="token keyword">function</span> <span class="token function">processUserInput</span><span class="token punctuation">(</span>callback<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">'Please enter your name.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">callback</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><font></font>
+<font></font>
+<span class="token function">processUserInput</span><span class="token punctuation">(</span>greeting<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上面的例子是一个</font></font><a href="https://developer.mozilla.org/en-US/docs/Glossary/synchronous" title="同步：同步是指实时通信，其中每一方立即（或尽可能快地）立即接收（并且如果必要，处理和回复）消息。" class="glossaryLink"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">同步</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回调，因为它立即执行。</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">但是请注意，在</font></font><a href="https://developer.mozilla.org/en-US/docs/Glossary/asynchronous" title="异步：异步是指每个参与方在方便或可能的时候接收和处理消息而不是立即进行通信的环境。" class="glossaryLink"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">异步</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">操作完成</font><font style="vertical-align: inherit;">后，通常会使用回调来继续执行代码</font><font style="vertical-align: inherit;">- 这些称为异步回调。</font><font style="vertical-align: inherit;">例如，我们简单的</font></font><a href="https://github.com/mdn/learning-area/blob/master/javascript/apis/introduction/maps-example.html" class="external external-icon" rel="noopener"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">maps-example.html</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">示例（</font></font><a href="http://mdn.github.io/learning-area/javascript/apis/introduction/maps-example.html" class="external external-icon" rel="noopener"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">也可以参考</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）使用Google Maps API和Geolocation API来显示设备当前位置的地图。</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">因为从GPS获取设备的坐标是异步的（我们不清楚数据何时会被返回），所以这个</font></font><a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition" title="Geolocation.getCurrentPosition（）方法用于获取设备的当前位置。"><code>Geolocation.getCurrentPosition()</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">方法需要一个匿名的回调函数作为参数，它本身以返回的坐标数据为参数。</font><font style="vertical-align: inherit;">该函数仅在返回坐标数据时执行。&nbsp;</font></font></p>
+
+<h2 id="Learn_more"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学到更多</font></font></strong><a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function$edit#Learn_more" class="button section-edit only-icon" rel="nofollow, noindex"><i aria-hidden="true" class="icon-pencil"></i><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font></span></a></h2>
+
+<h3 id="General_knowledge" class="highlight-spanned"><span class="highlight-span"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基本知识</font></font></strong></span></h3>
+
+<ul>
+ <li><a href="https://en.wikipedia.org/wiki/Callback_(computer_programming)" title="回电话" class="external external-icon" rel="noopener"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回调</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">维基百科</font></font></li>
+ <li>
+  <p class="entry-title"><a href="http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/" class="external external-icon" rel="noopener"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解JavaScript回调函数并使用它们</font></font></a></p>
+ </li>
+</ul>
+                  
+                
+              </article>
+
+              <!-- contributors -->
+              <div class="wiki-block contributors">
+                <h2 class="offscreen"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档标签和贡献者</font></font></h2>
+                
+                
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签：</font></font></strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Callback" rel="nofollow, noindex"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回电话</font></font></a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Callback%20function" rel="nofollow, noindex"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回调函数</font></font></a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Glossary" rel="nofollow, noindex"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">词汇表</font></font></a></li>
+      
+    </ul>
+  </div>
+
+
+                
+                  <div class="contributors-sub">
+                    <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者此页：</font></font></strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/netpoetica"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">netpoetica</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">， 
+    
+         </font></font><a href="https://developer.mozilla.org/en-US/profiles/sideshowbarker"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">sideshowbarker</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">， 
+    
+         </font></font><a href="https://developer.mozilla.org/en-US/profiles/PushpitaPikuDey"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PushpitaPikuDey</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">， 
+    
+         </font></font><a href="https://developer.mozilla.org/en-US/profiles/johnwatsondev"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">johnwatsondev</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">， 
+    
+         </font></font><a href="https://developer.mozilla.org/en-US/profiles/chrisdavidmills"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">chrisdavidmills</font></font></a>
+    
+                  </div>
+                
+
+                
+                  <div class="contributors-sub">
+                    <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最后更新：</font></font></strong>
+                    <a href="https://developer.mozilla.org/en-US/profiles/netpoetica"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">netpoetica</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，
+                    </font></font><time datetime="2017-06-09T20:58:05.012188-07:00"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2017年6月9日，8:58:05 PM</font></font></time>
+                  </div>
+                
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+    
+      <div class="newsletter-box">
+        <div class="newsletter">
+    <form id="newsletterForm" class="newsletter-form nodisable" name="newsletter-form" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <div class="newsletter-head">
+            <h2 class="newsletter-teaser"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解最佳的网页开发</font></font></h2>
+            <p class="newsletter-description"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从MDN获取最新最好的信息，直接发送到您的收件箱。</font></font></p>
+            
+        </div>
+
+        <div class="newsletter-fields">
+            <input type="hidden" id="fmt" name="fmt" value="H">
+            <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+            <div id="newsletterErrors" class="newsletter-errors"></div>
+
+            <div id="newsletterEmail" class="form-group newsletter-group-email">
+                <label for="newsletterEmailInput" class="form-label offscreen"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电子邮件</font></font></label>
+                <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+            </div>
+
+            <div id="newsletterPrivacy" class="form-group form-group-agree newsletter-group-privacy hidden">
+                <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+                <label for="newsletterPrivacyInput"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                我很满意Mozilla处理我的信息，如本</font></font><a href="https://www.mozilla.org/privacy/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">隐私政策所述</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+                </font></font></label>
+            </div>
+            <div id="newsletterSubmit" class="newsletter-group-submit">
+                <button id="newsletter-submit" type="submit" class="button neutral newsletter-submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">立即注册</font></font></button>
+            </div>
+        </div>
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">谢谢！</font><font style="vertical-align: inherit;">请检查您的收件箱，以确认您的订阅。</font></font></h2>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您以前没有确认订阅过与Mozilla相关的电子报，您可能需要这样做。</font><font style="vertical-align: inherit;">请检查您的收件箱或您的垃圾邮件过滤器是否收到我们的电子邮件。
+        </font></font></p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">隐藏电子报注册</font></font></span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+      </div>
+    
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Glossary/Callback_function$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Glossary/Callback_function$history" label="View page history"></menuitem>
+  </menu>
+
+      </div>
+  </main>
+  <!-- Footer -->
+    <footer id="nav-footer" class="nav-footer">
+      <div class="center">
+          <a href="https://developer.mozilla.org/en-US/" class="nav-footer-logo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MDN网页文件</font></font></a>
+          <div class="footer-group footer-group-mdn">
+            <h2 class="footer-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MDN</font></font></h2>
+            <ul class="footer-list">
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络技术</font></font></a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学习Web开发</font></font></a></li>
+              <li><a href="https://developer.mozilla.org/docs/MDN/About"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于MDN</font></font></a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">反馈</font></font></a></li>
+              <li class="footer-social"><a href="https://twitter.com/mozdevnet" class="only-icon"><i aria-hidden="true" class="icon-twitter"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">推特</font></font></span></a></li>
+              <li class="footer-social"><a href="https://github.com/mdn/" class="only-icon"><i aria-hidden="true" class="icon-github"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub上</font></font></span></a></li>
+            </ul>
+          </div>
+
+          <a href="https://mozilla.org/" class="nav-footer-mozilla"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mozilla的</font></font></a>
+          <div class="footer-group footer-group-mozilla">
+            <h2 class="footer-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mozilla的</font></font></h2>
+            <ul class="footer-list">
+              <li><a href="https://www.mozilla.org/about/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于</font></font></a></li>
+              <li><a href="https://www.mozilla.org/contact/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">联系我们</font></font></a></li>
+              <li><a href="https://donate.mozilla.org/?utm_source=developer.mozilla.org&amp;utm_medium=referral&amp;utm_content=footer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">捐</font></font></a></li>
+              <li><a href="https://www.mozilla.org/firefox/?utm_source=developer.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">火狐</font></font></a></li>
+              <li class="footer-social"><a href="https://twitter.com/mozilla" class="only-icon"><i aria-hidden="true" class="icon-twitter"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">推特</font></font></span></a></li>
+              <li class="footer-social"><a href="https://www.facebook.com/mozilla" class="only-icon"><i aria-hidden="true" class="icon-facebook"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Facebook的</font></font></span></a></li>
+              <li class="footer-social"><a href="https://www.instagram.com/mozillagram/" class="only-icon"><i aria-hidden="true" class="icon-instagram"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Instagram的</font></font></span></a></li>
+            </ul>
+          </div>
+
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他语言：</font></font></label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="英语（美国）" value="/en-US/docs/Glossary/Callback_function" selected=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          英语（美国）（en-US）
+        </font></font></option>
+        
+          <option title="法国" value="/fr/docs/Glossaire/Fonction_de_rappel"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Français（fr）
+          </font></font></option>
+          <option title="葡萄牙语（巴西）" value="/pt-BR/docs/Glossario/Callback_function"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Português（do Brasil）（pt-BR）
+          </font></font></option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+
+          
+            <ul class="footer-tos">
+              <li><a href="https://www.mozilla.org/about/legal/terms/mozilla"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">条款</font></font></a></li>
+              <li><a href="https://www.mozilla.org/privacy/websites/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">隐私</font></font></a></li>
+              <li><a href="https://www.mozilla.org/privacy/websites/#cookies"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">饼干</font></font></a></li>
+            </ul>
+
+            <div class="contentinfo">
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">©2005-2017 Mozilla和个人贡献者。</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容在</font></font><a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些许可</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下可用</font><font style="vertical-align: inherit;">。</font></font></p>
+            </div>
+          
+      </div>
+    </footer> 
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://cdn.mdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script type="text/javascript" src="./01回调函数 - 词汇表_ MDN_files/javascript.b28203373cc1.js.下载"></script>
+    <script type="text/javascript" src="./01回调函数 - 词汇表_ MDN_files/main.bbdf2ce799db.js.下载" charset="utf-8"></script>
+    <script>
+      if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+    </script>
+    
+
+  
+
+    
+        <script async="" type="text/javascript" src="./01回调函数 - 词汇表_ MDN_files/wiki.0f1ae0b05e90.js.下载" charset="utf-8"></script>
+    
+
+
+
+  
+
+  
+    <script type="text/javascript">
+        (function($) {
+            $('#wikiArticle').children('h2[id]').each(function() {
+                var id = $(this).attr('id');
+                var href = '/en-US/docs/Glossary/Callback_function$edit#' + id;
+
+                $('<a>').attr({
+                    href: href,
+                    'class': 'button section-edit only-icon',
+                    'rel': 'nofollow, noindex'
+                })
+                .append($('<i aria-hidden="true" class="icon-pencil"></i>'))
+                .append($('<span>'))
+                .find('span')
+                .text(gettext('Edit'))
+                .end()
+                .on('click', function(e) {
+                    e.preventDefault();
+
+                    mdn.analytics.trackEvent({
+                        category: 'Section Edit',
+                        action: id
+                    }, function() {
+                        window.location = href;
+                    });
+                })
+                .appendTo(this);
+            });
+        })(jQuery);
+    </script>
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="./01回调函数 - 词汇表_ MDN_files/newsletter.7cd3274169f2.js.下载" charset="utf-8"></script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./01回调函数 - 词汇表_ MDN_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+  
+
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>GetUserMedia实例</title>
+    <script src="http://localhost:8000/target/target-script-min.js#anonymous"></script>
+</head>
+<body>
+<video id="video" autoplay></video>
+<br>
+<button id="id-button-change" width="200px" height="200px">change</button>
+<br>
+<canvas id="canvas" height="300" width="300"></canvas>
+</body>
+
+<!--<script>-->
+    <!--navigator.getUserMedia = navigator.getUserMedia ||  navigator.webkitGetUserMedia || navigator.mozGetUserMedia;-->
+
+    <!--if (navigator.getUserMedia) {-->
+        <!--navigator.getUserMedia({-->
+                <!--audio: true,-->
+                <!--video: { width: 1280, height: 720 } },-->
+            <!--function(stream) {-->
+                <!--var video = document.querySelector('video');-->
+                <!--video.srcObject = stream;-->
+                <!--video.onloadedmetadata = function(e) {-->
+                    <!--video.play();-->
+                <!--};-->
+            <!--},-->
+            <!--function(err) {-->
+                <!--var wrong = `<h1>这是一个h1标签，里面是摄像头回调错误内容 + <br>${err}</h1>`;-->
+                <!--document.body.insertAdjacentHTML('beforeend', wrong);-->
+<!--//                console.log("The following error occurred: " + err.name);-->
+            <!--}-->
+        <!--);-->
+    <!--} else {-->
+        <!--var wrong = `<h1>getUserMedia not supported</h1>`;-->
+        <!--document.body.insertAdjacentHTML('beforeend', wrong);-->
+<!--//        console.log("getUserMedia not supported");-->
+    <!--}-->
+<!--</script>-->
+
+<script>
+    var log = function(){
+        console.log.apply(console, arguments);
+    };
+//    const constraints = { audio: true, video: { width: 1280, height: 720 } };
+
+    var front = false;
+    document.getElementById('id-button-change').onclick = function() { front = !front;
+        var constraints = { video: { facingMode: (front? "user" : "environment") } };
+
+        var mediaStream = null;
+
+        const video = document.querySelector('video');
+        navigator.mediaDevices.getUserMedia(constraints)
+            .then(function(mediaStream) {
+                video.srcObject = mediaStream;
+
+                var r = `<h2>这是一个h2标签，里面是mediaStream
+${mediaStream}</h2>`;
+                document.body.insertAdjacentHTML('beforeend', r);
+
+                log("video.srcObject", video.srcObject);
+                log('mediaStreamd的属性active', video.srcObject.active);
+                log('mediaStreamd的属性ended', video.srcObject.ended);
+                log('mediaStreamd的属性id', video.srcObject.id);
+                video.onloadedmetadata = function(e) {
+                    log(e);
+                    video.play();
+                };
+            })
+            .catch(function(err) {
+                console.log(err.name + ": " + err.message);
+                console.log('('+err.message+')');
+                var wrong = `<h1>这是一个h1标签，里面是摄像头回调错误内容` + `<br>${err.name}` +`<br>${err.message}</h1>`;
+                document.body.insertAdjacentHTML('beforeend', wrong);
+            });
+    };
+
+    var constraints = { audio: true, video: { width: 1280, height: 720 } };
+
+    var mediaStream = null;
+
+    const video = document.querySelector('video');
+    navigator.mediaDevices.getUserMedia(constraints)
+        .then(function(mediaStream) {
+            video.srcObject = mediaStream;
+
+            var r = `<h2>这是一个h2标签，里面是mediaStream
+${mediaStream}</h2>`;
+            document.body.insertAdjacentHTML('beforeend', r);
+
+            log("video.srcObject", video.srcObject);
+            log('mediaStreamd的属性active', video.srcObject.active);
+            log('mediaStreamd的属性ended', video.srcObject.ended);
+            log('mediaStreamd的属性id', video.srcObject.id);
+            video.onloadedmetadata = function(e) {
+                log(e);
+                video.play();
+            };
+        })
+        .catch(function(err) {
+            console.log(err.name + ": " + err.message);
+            console.log('('+err.message+')');
+            var wrong = `<h1>这是一个h1标签，里面是摄像头回调错误内容` + `<br>${err.name}` +`<br>${err.message}</h1>`;
+            document.body.insertAdjacentHTML('beforeend', wrong);
+        });
+    log(navigator.mediaDevices.getUserMedia(constraints));
+    /**
+     {[[PromiseStatus]]: "pending",
+     [[PromiseValue]]: undefined
+     }
+     * */
+</script>
+<script>
+    /**拍照*/
+//    const picture = document.querySelector('#id-button-picture');
+//    picture.addEventListener('click', function(){
+//        const canvas = document.querySelector('#canvas');
+//        const context = canvas.getContext('2d');
+//        context.drawImage(video, 0, 0, 300, 300);
+//    });
+    /***下面的是做一个按钮，点击让其转换前后置摄像头*********************/
+//    var front = false;
+//    document.getElementById('flip-button').onclick = function() { front = !front; };
+//
+//    var constraints = { video: { facingMode: (front? "user" : "environment") } };
+</script>
+
+</html>
